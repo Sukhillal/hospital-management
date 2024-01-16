@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        {% block content %}
+        
+        <h1 class="text-center bg-dark text-white">Department</h1>
+
+        {% for d in dep %}
+
+        <div class="mx-auto w-50 bg-success text-center text-white">
+            <h1> {{d.dep_name}}</h1>
+            <p>{{ d.dep_desc}}
+
+            </div>
+
+
+        {% endfor %}
+        
+        
+        {% endblock content %}
+        
+        <script src="" async defer></script>
+    </body>
+</html>
